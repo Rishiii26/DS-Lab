@@ -1,19 +1,20 @@
-
-#include <bits/stdc++.h>
-using namespace std;
+#include <stdio.h>
 int main()
 {
     int n;
-    cout << "enter size" << endl;
-    cin >> n;
+    printf("Enter size:\n");
+    scanf("%d", &n);
+
     int ar[n + 1];
     for (int i = 0; i < n; i++)
     {
-        cin >> ar[i];
+        scanf("%d", &ar[i]);
     }
+
     int x;
-    cout << "enter number" << endl;
-    cin >> x;
+    printf("Enter number:\n");
+    scanf("%d", &x);
+
     for (int i = 0; i < n; i++)
     {
         if (ar[i] > x)
@@ -26,8 +27,11 @@ int main()
             break;
         }
     }
+
     for (int i = 0; i <= n; i++)
     {
-        cout << ar[i] << "\t";
+        printf("%d\t", ar[i]);
     }
+
+    return 0;
 }
